@@ -1,0 +1,40 @@
+.banner ul li { background-position:center; background-repeat:no-repeat; background-size:cover; position:relative; }
+.banner ul li:before { position:absolute; width:100%; height:100%; background:linear-gradient(to right, rgba(48, 123, 198, 0.9) , rgba(48, 123, 198, 0.2)); content:""; }
+.sub-banner ul li:before { background:rgba(48, 123, 198, 0.8); }
+.banner-content { position:absolute; }
+.banner-subject { font-weight:bold; color:#fff; }
+.banner-description { color:#fff; }
+.banner-button button { width:285px; height:55px; border:0; background-color:#014f99; border-radius:10px; color:#fff; font-size:20px; }
+.banner .bx-wrapper { border:0; }
+.banner .bx-wrapper .bx-pager { position:absolute; width:100%; bottom:20px; }
+.banner .bx-wrapper .bx-pager.bx-default-pager a { background:#fff; width:14px; height:14px; border-radius:7px; }
+.banner .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover { background:#00a0e9; }
+
+/* mobile */
+@media (max-width:767px) {
+	.banner ul li { height:300px; }
+	.banner .banner-content { top:40px; margin-left:-15px; width:100%; }
+	.banner .banner-subject { font-size:36px; font-weight:700; color:#fff; padding-left:30px; }
+	.banner .banner-description { margin-top:20px; font-size:18px; color:#fff; padding-left:30px; font-weight:100; }
+	.banner .banner-button { margin-top:30px; text-align:center; }
+	.sub-banner ul li { height:200px; }
+	.sub-banner .banner-content { top:40px; margin-left:-15px; width:100%; }
+	.sub-banner .banner-subject { font-size:36px; font-weight:bold; color:#fff; padding-left:30px; }
+	.sub-banner .banner-description { margin-top:20px; font-size:18px; color:#fff; padding-left:30px; }
+	.sub-banner .banner-button { margin-top:30px; text-align:center; }
+}
+
+/* pc */
+@media (min-width:768px) {
+	.banner ul li { height:570px; }
+	.banner .banner-content { top:140px; }
+	.banner .banner-subject { font-size:48px; font-weight:700; color:#fff; }
+	.banner .banner-description { margin-top:30px; font-size:24px; color:#fff; font-weight:100; }
+	.banner .banner-button { margin-top:65px; }
+	.banner .banner-icon { position:absolute; top:60px; right:120px; font-size:300px; color:#fff; }
+	.sub-banner ul li { height:300px; }
+	.sub-banner .banner-content { top:70px; margin-left:-15px; width:100%; }
+	.sub-banner .banner-subject { font-size:48px; font-weight:bold; color:#fff; padding-left:30px; }
+	.sub-banner .banner-description { margin-top:20px; font-size:24px; color:#fff; padding-left:30px; }
+	.sub-banner .banner-button { margin-top:30px; text-align:center; }
+}
