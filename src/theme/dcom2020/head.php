@@ -13,7 +13,6 @@ include_once(G5_LIB_PATH.'/poll.lib.php');
 include_once(G5_LIB_PATH.'/visit.lib.php');
 include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
-
 add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 10);
 ?>
 <!-- 상단 시작 { -->
@@ -73,4 +72,5 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 10);
 		</div> <!-- container -->
 	</div> <!-- header-->
 	<div class="content">
-		<?php echo latest('theme/main_banner', 'main_banner', 10, 23); ?>
+		<?php echo latest('theme/main_banner', 'main_banner', 5, 23); ?>
+		<div class="container"?>

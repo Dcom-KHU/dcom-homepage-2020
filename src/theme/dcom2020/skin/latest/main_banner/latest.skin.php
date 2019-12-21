@@ -9,21 +9,36 @@ $thumb_height = 570;
 $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
-
-<div class="banner">
+<div class="banner <?php if(!defined('_INDEX_') or !_INDEX_) echo "sub-banner"; ?>">
 	<ul>
 	<?php
-	for ($i=0; $i<$list_count; $i++) {
-		$thumb = get_list_thumbnail($bo_table, $list[$i]['wr_id'], $thumb_width, $thumb_height, false, true);
+	if(!defined('_INDEX_') or !_INDEX_) {
+	?>
+		<li style="background-image:url('<?php echo G5_THEME_URL; ?>/img/sub-banner.jpg');">
+			<div class="container">
+				<div class="banner-content">
+					<div class="banner-subject">
+						Notice					
+					</div>
+					<div class="banner-description">
+						공지사항입니다.
+					</div>
+				</div> <!-- banner-content -->
+			</div> <!-- container -->
+		</li>
+	<?php
+	} else {
+		for ($i=0; $i<$list_count; $i++) {
+			$thumb = get_list_thumbnail($bo_table, $list[$i]['wr_id'], $thumb_width, $thumb_height, false, true);
 
-		if($thumb['src']) {
-			$img = $thumb['src'];
-		} else {
-			$img = G5_IMG_URL.'/no_img.png';
-			$thumb['alt'] = '이미지가 없습니다.';
-		}
-		$link_name = $list[$i]['wr_link1'];
-		$lik_url = str_replace("[_DOMAIN_]", G5_URL, $list[$i]['wr_link2']);
+			if($thumb['src']) {
+				$img = $thumb['src'];
+			} else {
+				$img = G5_IMG_URL.'/no_img.png';
+				$thumb['alt'] = '이미지가 없습니다.';
+			}
+			$link_name = $list[$i]['wr_link1'];
+			$lik_url = str_replace("[_DOMAIN_]", G5_URL, $list[$i]['wr_link2']);
 	?>
 		<li style="background-image:url('<?php echo $img; ?>');">
 			<div class="container">
@@ -43,10 +58,14 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 			</div> <!-- container -->
 		</li>
 	<?php
+		}
 	}
 	?>
 	</ul>
 </div>
 <script>
-$(".banner ul").bxSlider();
+$(function() {
+	if($(".banner ul li").length > 1)
+		$(".banner ul").bxSlider();
+});
 </script>
