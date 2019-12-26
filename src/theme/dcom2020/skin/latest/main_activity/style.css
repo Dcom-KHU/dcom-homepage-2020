@@ -1,0 +1,22 @@
+.latest-main-activity { padding-bottom:40px; margin-bottom:40px; border-bottom:1px solid #e5ecee; }
+.latest-main-activity .more { position:absolute; right:15px; top:11px; width:40px; text-align:center; }
+.latest-main-activity .more a { color:#3a8afd; }
+.latest-main-activity-list { margin-top:20px; position:relative; }
+.latest-main-activity-list ul { font-size:0; white-space:nowrap; overflow-x:hidden; }
+.latest-main-activity-list ul li { display:inline-block; float:none !important; padding:0 15px; vertical-align:top; }
+.latest-main-activity-list ul li .inner { width:100%; height:100%; }
+.latest-main-activity-list .slide { position:absolute; top:50%; margin-top:-20px;  }
+.latest-main-activity-list .slide button { width:26px; height:40px; font-size:22px; background:none; border:0; cursor:pointer; }
+.latest-main-activity-list .slide-left { left:-40px; }
+.latest-main-activity-list .slide-right { right:-40px; }
+.latest-main-activity-list .thumbnail img { width:100%; }
+.latest-main-activity-list .list-content { font-size:0; margin-top:10px; }
+.latest-main-activity-list .list-content .category { display:inline-block; vertical-align:middle; width:56px; height:32px; font-weight:300; box-sizing:border-box; padding-top:4.5px; padding-bottom:4.5px; text-align:center; border-radius:6px; font-size:14px; margin-right:8px; }
+.latest-main-activity-list .list-content .category a { color:#fff; }
+.latest-main-activity-list .list-content .category-1 { background-color:#a20f16; }
+.latest-main-activity-list .list-content .category-2 { background-color:#014f99; }
+.latest-main-activity-list .list-content .category-3 { background-color:#ff8a00; }
+.latest-main-activity-list .list-content .category-4 { background-color:#037513; }
+.latest-main-activity-list .list-content .category-99 { background-color:#B8B8B8; }
+.latest-main-activity-list .list-content .title { display:inline-block; height:32px; line-height:32px; vertical-align:middle; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:break-all; font-size:14px; font-weight:300; }
+.latest-main-activity-list .list-content .title.using-category { width:-moz-calc(100% - 64px); width:-webkit-calc(100% - 64px); width:calc(100% - 64px); }

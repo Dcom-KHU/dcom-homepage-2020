@@ -10,6 +10,7 @@ if (G5_IS_MOBILE) {
 include_once(G5_THEME_PATH.'/head.php');
 ?>
 
+<?php echo latest('theme/main_activity', 'activity', 10, 23); ?>
 <h2 class="sound_only">최신글</h2>
 
 <div class="latest_top_wr">
