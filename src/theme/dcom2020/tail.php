@@ -6,7 +6,7 @@ if (G5_IS_MOBILE) {
     return;
 }
 ?>
-
+		</div> <!-- container -->
 	</div> <!-- content -->
 		<div class="footer">
 			<div class="footer-menu">
