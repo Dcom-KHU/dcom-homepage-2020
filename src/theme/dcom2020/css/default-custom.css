@@ -27,6 +27,8 @@ input[type=text]:focus,input[type=password]:focus,  textarea:focus,select:focus 
 .btn { width:auto; padding:10px 20px; border-radius:6px; font-size:14px; }
 .btn-blue { background-color:#00a0e9; color:#fff; border:1px solid #ddd; }
 
+.col-padding { padding-left:15px; padding-right:15px; }
+
 /* x-small (xs) */
 @media (max-width:767px) {
 	.container { width:100%; }
